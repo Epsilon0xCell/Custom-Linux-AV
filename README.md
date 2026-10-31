@@ -20,6 +20,23 @@ Running `custom.sh` does exactly three things, in order:
 
 That is the whole script. The only tool it uses is ClamAV.
 
+## Exit codes and failure handling
+
+- `0`: the scan ran and found nothing.
+- `1`: the scan ran, found infected files, and moved them into
+  `./virus`. A working scan that caught something, not a failure.
+- `2`: the scan could not run or finish: `freshclam` or `clamscan`
+  missing, the signature update failed on a machine with no existing
+  signature database, the quarantine folder could not be created, or
+  clamscan reported an error. If the update fails but signatures
+  already exist, the script warns and scans with the older ones.
+- `./custom.sh --help` prints the usage and these exit codes.
+
+Tests: `python3 -m unittest` runs `test_custom.py`, which drives the
+script with stub `sudo`, `freshclam`, and `clamscan` commands on PATH
+and checks the exit code mapping. A real full-system scan was not run
+as a test; that is the script's normal use, not a test step.
+
 ## Requirements
 
 - A GNU/Linux system with Bash
