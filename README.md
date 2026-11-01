@@ -1,12 +1,26 @@
-![banner](assets/banner.png)
+![Custom-Linux-AV introduction, wordless](intro-banner.png)
+
 
 # Custom-Linux-AV
+![Custom-Linux-AV banner](banner.png)
+
+![Custom-Linux-AV animated scene](assets-scene.svg)
+
+
+> CHECK ./virus BEFORE DELETING
+
+
 
 A small Bash script (`custom.sh`) that runs one full-system ClamAV scan.
 It updates the ClamAV virus definitions, then scans the whole filesystem
 recursively and moves anything ClamAV detects into a quarantine folder
 named `virus` in the current directory, so you decide what to do with
 the detections.
+
+
+<p align="center"><img src="sep-heavy.svg" alt=""></p>
+
+<p class="plate"><sub>HERBARIUM LABEL 1 · ESPALIER WALL · pressed leaf ▪</sub></p>
 
 ## What the script does
 
@@ -19,6 +33,11 @@ Running `custom.sh` does exactly three things, in order:
    filesystem root and moves detected files into `./virus`.
 
 That is the whole script. The only tool it uses is ClamAV.
+
+
+<p align="center"><img src="sep-heavy.svg" alt=""></p>
+
+<p class="plate"><sub>HERBARIUM LABEL 2 · ESPALIER WALL · pressed leaf ▪</sub></p>
 
 ## Exit codes and failure handling
 
@@ -37,12 +56,22 @@ script with stub `sudo`, `freshclam`, and `clamscan` commands on PATH
 and checks the exit code mapping. A real full-system scan was not run
 as a test; that is the script's normal use, not a test step.
 
+
+<p align="center"><img src="sep-heavy.svg" alt=""></p>
+
+<p class="plate"><sub>HERBARIUM LABEL 3 · ESPALIER WALL · pressed leaf ▪</sub></p>
+
 ## Requirements
 
 - A GNU/Linux system with Bash
 - ClamAV installed, providing `freshclam` and `clamscan`
 - `sudo` access, because the update, the quarantine folder, and the
   scan all run as root
+
+
+<p align="center"><img src="sep-heavy.svg" alt=""></p>
+
+<p class="plate"><sub>HERBARIUM LABEL 4 · ESPALIER WALL · pressed leaf ▪</sub></p>
 
 ## How to run
 
@@ -53,6 +82,11 @@ chmod +x custom.sh
 ./custom.sh
 ```
 
+
+<p align="center"><img src="sep-heavy.svg" alt=""></p>
+
+<p class="plate"><sub>HERBARIUM LABEL 5 · ESPALIER WALL · pressed leaf ▪</sub></p>
+
 ## What it does not do
 
 - It does not schedule itself. There is no cron job, systemd unit, or
@@ -62,6 +96,11 @@ chmod +x custom.sh
   Detection is whatever ClamAV and its signatures catch.
 - It has no realtime or on-access protection.
 
+
+<p align="center"><img src="sep-heavy.svg" alt=""></p>
+
+<p class="plate"><sub>HERBARIUM LABEL 6 · ESPALIER WALL · pressed leaf ▪</sub></p>
+
 ## Caution
 
 A full-system scan with `--move` will move files ClamAV flags,
@@ -70,9 +109,19 @@ installation if a detection is a false positive. Review the contents
 of `./virus` before deleting anything, and note that the folder and
 its contents are owned by root.
 
+
+<p align="center"><img src="sep-heavy.svg" alt=""></p>
+
+<p class="plate"><sub>HERBARIUM LABEL 7 · ESPALIER WALL · pressed leaf ▪</sub></p>
+
 ## Todo
 
 - Setup cron
+
+
+<p align="center"><img src="sep-heavy.svg" alt=""></p>
+
+<p class="plate"><sub>HERBARIUM LABEL 8 · ESPALIER WALL · pressed leaf ▪</sub></p>
 
 ## License
 

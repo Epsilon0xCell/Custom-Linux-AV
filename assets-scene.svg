@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" role="img" aria-label="Espalier wall scene">
+<rect width="1200" height="260" fill="#a85f3c"/><rect width="1200" height="26" fill="#8a7a5e"/>
+<g fill="#93502f"><rect x="20" y="44" width="150" height="26"/><rect x="200" y="44" width="150" height="26"/><rect x="380" y="44" width="150" height="26"/><rect x="560" y="44" width="150" height="26"/><rect x="740" y="44" width="150" height="26"/><rect x="920" y="44" width="150" height="26"/></g>
+<g stroke="#5c3d24" stroke-width="6"><line x1="80" y1="210" x2="80" y2="96"/><line x1="20" y1="120" x2="300" y2="120"/><line x1="20" y1="168" x2="300" y2="168"/><line x1="900" y1="210" x2="900" y2="96"/><line x1="640" y1="120" x2="1160" y2="120"/><line x1="640" y1="168" x2="1160" y2="168"/></g>
+<g fill="#4c7a34"><circle cx="60" cy="108" r="13"/><circle cx="140" cy="108" r="13"/><circle cx="220" cy="108" r="13"/><circle cx="700" cy="108" r="13"/><circle cx="800" cy="108" r="13"/><circle cx="980" cy="108" r="13"/><circle cx="1100" cy="108" r="13"/></g>
+<g fill="#c8b458"><circle cx="100" cy="138" r="9"/><circle cx="200" cy="138" r="9"/><circle cx="760" cy="138" r="9"/><circle cx="900" cy="138" r="9"/><circle cx="1040" cy="138" r="9"/></g>
+<g><circle cx="480" cy="60" r="10" fill="#2c2c2c"><animate attributeName="cx" values="480;520;480" dur="9s" repeatCount="indefinite"/></circle><circle cx="530" cy="44" r="8" fill="#2c2c2c"><animate attributeName="cx" values="530;566;530" dur="11s" repeatCount="indefinite"/></circle></g>
+<path d="M120 236 Q140 190 118 168 Q150 196 138 236" fill="#5d8f3e"><animateTransform attributeName="transform" type="rotate" values="0 130 236;4 130 236;0 130 236" dur="5s" repeatCount="indefinite"/></path>
+<path d="M170 238 Q196 196 178 172 Q206 200 196 238" fill="#6fa04a"><animateTransform attributeName="transform" type="rotate" values="0 184 238;-4 184 238;0 184 238" dur="6s" repeatCount="indefinite"/></path>
+<g stroke="#b9bdc0" stroke-width="4" fill="none"><path d="M1010 120 l26 22 M1036 120 l-26 22"><animateTransform attributeName="transform" type="rotate" values="0 1023 131;10 1023 131;0 1023 131" dur="4s" repeatCount="indefinite"/></path></g>
+<path d="M300 210 q60 -70 150 -34 q-60 50 -150 34" fill="none" stroke="#e8c84a" stroke-width="3" stroke-dasharray="5 7"><animate attributeName="stroke-dashoffset" values="0;24" dur="3s" repeatCount="indefinite"/></path>
+<circle cx="330" cy="182" r="5" fill="#e8c84a"/>
+<g fill="none" stroke="#d9c9a8"><circle cx="600" cy="238" r="8"><animate attributeName="r" values="8;34;8" dur="8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0.15;0.9" dur="8s" repeatCount="indefinite"/></circle><circle cx="600" cy="238" r="4"/></g>
+<circle cx="420" cy="196" r="10" fill="#c8b458"><animate attributeName="cy" values="196;238;238" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0" dur="7s" repeatCount="indefinite"/></circle>
+</svg>
